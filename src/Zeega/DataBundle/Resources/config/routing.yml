@@ -1,3 +1,0 @@
-ZeegaDataBundle_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: ZeegaDataBundle:Default:index }

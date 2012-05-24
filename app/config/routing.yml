@@ -39,16 +39,12 @@ fos_user_change_password:
 _security_logout:
     pattern:  /logout    
 
-api:
+_security_login:
+    pattern:  /login
+
+ZeegaApiBundle:
     resource: "@ZeegaApiBundle/Resources/config/routing.yml"
     type: rest
 
-ingest:
-    resource: "@ZeegaCoreBundle/Resources/config/routing_ingest.yml"
-
-editor:
-    resource: "@ZeegaCoreBundle/Resources/config/routing_editor.yml"
-    
-
-admin:
+ZeegaAdminBundle:
     resource: "@ZeegaAdminBundle/Resources/config/routing.yml"
