@@ -851,4 +851,29 @@ class Item
     {
         // Add your code here
     }
+    /**
+     * @var string $language
+     */
+    private $language;
+
+
+    /**
+     * Set language
+     *
+     * @param string $language
+     */
+    public function setLanguage($language)
+    {
+        $this->language = $language;
+    }
+
+    /**
+     * Get language
+     *
+     * @return string 
+     */
+    public function getLanguage()
+    {
+        return $this->language;
+    }
 }

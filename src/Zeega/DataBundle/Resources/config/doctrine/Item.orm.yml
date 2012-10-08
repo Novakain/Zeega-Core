@@ -140,7 +140,10 @@ Zeega\DataBundle\Entity\Item:
         geo_latlng:
             type: string
             nullable: true
-        
+        language:
+            type: string
+            length: 3
+            nullable: true        
     indexes:
         media_date_created_index:
             columns: [media_date_created]      

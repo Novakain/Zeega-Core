@@ -55,7 +55,8 @@
 			"editable" : false
 		{%- endif -%},
 		"published" : {{ item.published | default(false) | json_encode | raw}},
-                "enabled" : {{ item.enabled | default(false) | json_encode | raw}}
+                "enabled" : {{ item.enabled | default(false) | json_encode | raw}},
+                "language" : {{ item.language | default(null) | json_encode | raw}}
 	}
 	{% else %}
 		{}
